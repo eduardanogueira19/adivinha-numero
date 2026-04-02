@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o Número</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Adivinhe o Número</h1>
+
+        <p>Escolha um número entre 0 e 10:</p>
+
+        <input type="text" id="inputNumero" placeholder="Digite seu palpite">
+
+        <p id="mensagem"></p>
+        <div class="botao">
+            <button onclick="btnChutar()" id="btnChutar">Chutar</button>
+            <button onclick="btnReiniciar()" id="btnReiniciar"> Reiniciar Jogo
+            </button>
+        </div>
+        <p>Tentativas: <span id="tentativas">0</span></p>
+        
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

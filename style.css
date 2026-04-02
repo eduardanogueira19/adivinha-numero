@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #502d55;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100vh; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.container{
+    text-align: center;
+    justify-content: center;
+    background-color: #00000042;
+    padding: 50px;
+    color: #f6dbc0;
+    border-radius: 15px;
+}
+
+input{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+}
+
+.botao{
+    margin: 2% auto;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+
+button{
+    display: block;
+    background-color: #935073;
+    color: #f8f4e9;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+button:hover{
+    background-color: #f6dbc0;
+    color: #502d55;
+    cursor: pointer;
+}
+
+h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 250;
+    font-style: italic;
+}
