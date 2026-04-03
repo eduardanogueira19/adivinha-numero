@@ -65,3 +65,27 @@ p{
     font-weight: 250;
     font-style: italic;
 }
+
+@media (max-width: 600px) {
+
+    .container{
+        margin: 10px;
+        text-align: center;
+        justify-content: center;
+        background-color: #00000042;
+        padding: 8px;
+        color: #f6dbc0;
+        border-radius: 15px;
+    }
+
+    h1{
+        font-size: 30px;
+        padding: 2px;
+    }
+
+    p{
+        font-size: 16px;
+        padding: 5px;
+    }
+
+}
