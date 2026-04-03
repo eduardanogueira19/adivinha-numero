@@ -1,5 +1,6 @@
 //Gerar um número aleatório
-let numeroSecreto = Math.floor(Math.random() * 11);
+let numeroSecreto = Math.floor(Math.random()
+* 11) + 1;
 /*
     Math.random() → gera número entre 0 e 0.999...
     * 101 → transforma em intervalo de 0 a 100
@@ -10,23 +11,29 @@ let acerto = false;
 let mensagem = "";
 let tentativas = 0;
 
+
 function btnChutar() {
 
     let numeroUsuario = Number(document.getElementById("inputNumero").value);
     let mensagem = "";
 
-    tentativas++;
-
-    if (numeroUsuario === numeroSecreto) {
-        mensagem = "Parabéns, você acertou!";
+    if (numeroUsuario == " "){
+        mensagem = "Insira um número!";
+    }
+    
+    else if (numeroUsuario === numeroSecreto) {
+        mensagem = "Parabéns, você acertou! " + "\nO número secreto era " + numeroSecreto;
         acerto = true;
-        
+        tentativas++;
+
     } 
     else if (numeroUsuario > numeroSecreto) {
         mensagem = "Seu chute foi MAIOR que o número secreto";
+        tentativas++;
     } 
     else {
         mensagem = "Seu chute foi MENOR que o número secreto";
+        tentativas++;
     }
 
     document.getElementById("mensagem").textContent = mensagem;
@@ -46,5 +53,5 @@ function btnReiniciar(){
 }
 
 /*
-Quando o usuário acertar, não deixar continuar sem apertar o botão de reiniciar
+    Quando o usuário acertar, não deixar continuar sem apertar o botão de reiniciar
 */
